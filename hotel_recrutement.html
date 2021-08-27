@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire de recrutement</title>
 </head>
-
+<style>
+    a {
+        text-decoration: none;
+        color: gray;
+        background: orange;
+        border-radius: 12px;
+    }
+</style>
 <body>
     <form action="#"></form>
     <div>
@@ -19,6 +26,12 @@
         <input type="email" name="email" id="email" required autocomplete placeholder="Votre adresse email">
         <input type="" name="cv" id="cv" required autocomplete placeholder="ton cv">
         <input type="" name="lettre de motivation" id="lm" required autocomplete placeholder="la lettre de motivation">
+
+        <div>
+            <a href="#" download>Télécharger mon CV</a>
+            <a href="#" download>Télécharger ma LM</a>
+        </div>
+
         <textarea name="message" id="msg" placeholder="Votre message" required>
             </textarea>
         <input type="button" value="Envoyer">
