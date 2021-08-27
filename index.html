@@ -5,8 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Parimis</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header></header>
+    <header>
+
+    </header>
+    <main>
+        <form action="contact.php" method="post">
+            <fieldset>
+                <legend>Votre genre</legend>
+                <div>
+                    <label for="women">Femme</label>
+                    <input type="radio" required name="genre" value="femme" id="women">
+
+                    <label for="men">Homme</label>
+                    <input type="radio" required name="genre" value="homme" id="men">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informations personnelles</legend>
+                <input type="text" name="nom" id="name" required autocomplete placeholder="Votre nom">
+
+                <input type="text" name="prenom" id="Prenom" required autocomplete placeholder="prenom">
+
+                <input type="email" name="email" id="email" required autocomplete placeholder="Votre adresse email">
+
+                <input type="tel" name="phone" id="phone" autocomplete placeholder="Votre numero de telephone">
+            </fieldset>
+
+            <!-- <input type="password" id="mdp" placeholder="Votre mot de passe"> -->
+            <!-- <input type="file"> -->
+            <!-- <input type="date"> -->
+            <fieldset>
+                <legend>Reservation</legend>
+                <select name="objet" id="objet" required>
+                    <option value="#">Selectionnez l'objet</option>
+
+                    <optgroup label="Chambres" id="bleu">
+                        <option value="R11">Classiques</option>
+                    </optgroup>
+
+                    <optgroup label="Chambres" id="rose">
+                        <option value="rdv">Confort</option>
+                    </optgroup>
+
+                    <optgroup label="Chambres" id="rose">
+                        <option value="appel">Deluxe</option>
+                    </optgroup>
+
+                    <optgroup label="Chambres" id="rose">
+                        <option value="rdv">Suite</option>
+                    </optgroup>
+
+                </select>
+
+                <textarea name="message" id="msg" placeholder="Votre message" required>
+        </textarea>
+
+        <fieldset>
+                <input type="date" name="reservation">
+
+                <input type="submit" value="Envoyer">
+
+
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
